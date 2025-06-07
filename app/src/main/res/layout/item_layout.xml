@@ -6,7 +6,7 @@
     android:gravity="center_vertical">
 
     <TextView
-        android:id="@+id/textViewItem"
+        android:id="@+id/viewLocal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -14,7 +14,51 @@
         android:layout_weight="1"
         android:textSize="18sp"
         android:textStyle="bold"
-        tools:text="Novo Item" />
+        tools:text="Local: Freguesia do Ó" />
+
+    <TextView
+        android:id="@+id/viewTipoEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Local: Freguesia do Ó" />
+
+    <TextView
+        android:id="@+id/viewGrauImpacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Local: Freguesia do Ó" />
+
+    <TextView
+        android:id="@+id/viewData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Local: Freguesia do Ó" />
+
+    <TextView
+        android:id="@+id/viewNrPessoasAfetadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Local: Freguesia do Ó" />
 
     <ImageButton
         android:id="@+id/imageButton"

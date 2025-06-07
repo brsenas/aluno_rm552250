@@ -28,10 +28,9 @@ class ItemsViewModel(application: Application) : AndroidViewModel(application) {
         itemsLiveData = itemDao.getAll()
     }
 
-    fun addItem(item: String) {
+    fun addItem(item: ItemModel) {
         viewModelScope.launch(Dispatchers.IO) {
-            val newItem = ItemModel(name = item)
-            itemDao.insert(newItem)
+            itemDao.insert(item)
 
         }
     }

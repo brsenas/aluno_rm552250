@@ -16,11 +16,19 @@ class ItemsAdapter(private val onItemRemoved: (ItemModel) -> Unit) :
 
     inner class ItemViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
-        val textView = view.findViewById<TextView>(R.id.textViewItem)
+        val itemLocal = view.findViewById<TextView>(R.id.viewLocal)
+        val itemTipoEvento = view.findViewById<TextView>(R.id.viewTipoEvento)
+        val itemGrauImpacto = view.findViewById<TextView>(R.id.viewGrauImpacto)
+        val itemData = view.findViewById<TextView>(R.id.viewData)
+        val itemNrPessoasAfetadas = view.findViewById<TextView>(R.id.viewNrPessoasAfetadas)
         val button = view.findViewById<ImageButton>(R.id.imageButton)
 
         fun bind(item: ItemModel) {
-            textView.text = item.name
+            itemLocal.text = item.local
+            itemTipoEvento.text = item.tipo
+            itemGrauImpacto.text = item.impacto
+            itemData.text = item.data
+            itemNrPessoasAfetadas.text = item.afetados.toString()
 
             button.setOnClickListener {
                 onItemRemoved(item)

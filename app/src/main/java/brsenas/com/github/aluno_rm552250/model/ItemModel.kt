@@ -7,5 +7,9 @@ import androidx.room.PrimaryKey
 data class ItemModel(
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
-    val name: String
+    val local: String,
+    val tipo: String,
+    val impacto: String,
+    val data: String,
+    val afetados: Int
 )
